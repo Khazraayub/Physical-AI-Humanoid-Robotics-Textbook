@@ -14,16 +14,19 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://user.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/humanoid-robotics-course/',
+  // // Set the production url of your site here
+  // url: 'https://user.github.io',
+  // // Set the /<baseUrl>/ pathname under which your site is served
+  // // For GitHub pages deployment, it is often '/<projectName>/'
+  // baseUrl: '/humanoid-robotics-course/',
+  url: 'https://physical-ai-humanoid-robotics-textbook.vercel.app',
+  baseUrl: '/',
+
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'user', // Usually your GitHub org/user name.
-  projectName: 'humanoid-robotics-course', // Usually your repo name.
+  projectName: 'Physical-AI-Humanoid-Robotics-Textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
