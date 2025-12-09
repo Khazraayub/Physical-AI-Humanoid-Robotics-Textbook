@@ -9,6 +9,7 @@ param(
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$FeatureDescription
 )
+Write-Host "Passed arguments: $($FeatureDescription -join ' ')"
 $ErrorActionPreference = 'Stop'
 
 # Show help if requested
@@ -271,6 +272,8 @@ if (Test-Path $template) {
 
 # Auto-create history/prompts/<branch-name>/ directory (same as specs/<branch-name>/)
 # This keeps naming consistent across branch, specs, and prompts directories
+Write-Host "Repo Root: $repoRoot"
+Write-Host "Branch Name: $branchName"
 $promptsDir = "$repoRoot\history\prompts\$branchName"
 New-Item -ItemType Directory -Path $promptsDir -Force | Out-Null
 
